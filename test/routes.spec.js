@@ -17,7 +17,7 @@ const database = require('knex')(configuration);
 
 chai.use(chaiHttp);
 
-
+const token = process.env.TOKEN || config.TOKEN
 describe('test data_cleaner functions', () => {
 
   it('should alphabatize the mountains array by reduce by mountain range', () => {
@@ -134,7 +134,7 @@ describe('test server side routes', () => {
               mountain: 'test mountain',
               range: 'Mahalangur Himalaya'
             },
-            token: config.TOKEN
+            token
           })
           .end((err, response) => {
             response.should.have.status(201);
@@ -163,7 +163,7 @@ describe('test server side routes', () => {
             mountain: {
               mountain: 'test mountain'
             },
-            token: config.TOKEN
+            token
           })
           .end((err, response) => {
             response.should.have.status(422);
@@ -183,7 +183,7 @@ describe('test server side routes', () => {
             range: {
               range: 'Gumdrops'
             },
-            token: config.TOKEN
+            token
           })
           .end((err, response) => {
             response.should.have.status(201);
@@ -210,7 +210,7 @@ describe('test server side routes', () => {
             range: {
               range: ''
             },
-            token: config.TOKEN
+            token
           })
           .end((err, response) => {
             response.should.have.status(422);
