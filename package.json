@@ -1,0 +1,33 @@
+{
+  "name": "BYOB-mountains",
+  "version": "1.0.0",
+  "description": "",
+  "main": "knexfile.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "start": "node server.js",
+    "convert": "node ./helpers/convert_csv.js",
+    "clean": "node ./helpers/data_cleaner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "csvtojson": "^1.1.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.4.1",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.4.1",
+    "knex": "^0.13.0",
+    "pg": "^6.2.2"
+  }
+}

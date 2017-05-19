@@ -1,0 +1,55 @@
+{
+  "mountains":[
+  {
+    "Rank": "1",
+    "Mountain": "Mount Everest / Sagarmatha / Chomolungma",
+    "Height_m": "8848",
+    "Height_ft": "29029",
+    "Prominence_m": "8848",
+    "Range": "Mahalangur Himalaya",
+    "Coordinates": "27°59′17″N 86°55′31″E",
+    "Parent_mountain": "1953",
+    "First_ascent": "145",
+    "Ascents_bef_2004": "121"
+  },
+  {
+    "Rank": "2",
+    "Mountain": "K2 / Qogir / Godwin Austen",
+    "Height_m": "8611",
+    "Height_ft": "28251",
+    "Prominence_m": "4017",
+    "Range": "Baltoro Karakoram",
+    "Coordinates": "35°52′53″N 76°30′48″E",
+    "Parent_mountain": "Mount Everest",
+    "First_ascent": "1954",
+    "Ascents_bef_2004": "45",
+    "Failed_attempts_bef_2004": "44"
+  },
+  {
+    "Rank": "3",
+    "Mountain": "Kangchenjunga",
+    "Height_m": "8586",
+    "Height_ft": "28169",
+    "Prominence_m": "3922",
+    "Range": "Kangchenjunga Himalaya",
+    "Coordinates": "27°42′12″N 88°08′51″E",
+    "Parent_mountain": "Mount Everest",
+    "First_ascent": "1955",
+    "Ascents_bef_2004": "38",
+    "Failed_attempts_bef_2004": "24"
+  },
+  {
+    "Rank": "5",
+    "Mountain": "Makalu",
+    "Height_m": "8485",
+    "Height_ft": "27838",
+    "Prominence_m": "2386",
+    "Range": "Mahalangur Himalaya",
+    "Coordinates": "27°53′23″N 87°05′20″E",
+    "Parent_mountain": "Mount Everest",
+    "First_ascent": "1955",
+    "Ascents_bef_2004": "45",
+    "Failed_attempts_bef_2004": "52"
+  }
+]
+}
