@@ -12,7 +12,7 @@ const database = require('knex')(configuration);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.set('secretKey', config.CLIENT_SECRET);
+app.set('secretKey', process.env.CLIENT_SECRET || config.CLIENT_SECRET);
 app.set('port', process.env.PORT || 3000);
 
 if (process.env.NODE_ENV === 'development' && (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD)) {
