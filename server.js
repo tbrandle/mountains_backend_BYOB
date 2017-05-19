@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.set('secretKey', config.CLIENT_SECRET);
 app.set('port', process.env.PORT || 3000);
 
-if (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD) {
+if (process.env.NODE_ENV === 'development' && (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD)) {
   throw { error: 'Make sure you have a CLIENT_SECRET, USERNAME, and PASSWORD in your .env file' };
 }
 
