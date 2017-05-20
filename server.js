@@ -63,6 +63,15 @@ const insertNewMountain = (mountain, rangeId, res) => {
     }));
 };
 
+app.get('/',(req, res) => {
+  database('mountains').select()
+    .then(mountains => res.status(200).json(mountains))
+    .catch(error => res.status(422).send({
+      success: false,
+      message: error.message,
+    }));
+})
+
 app.get('/api/v1/mountains', (req, res) => {
   const heightQuery = req.query.height_ft;
   if (heightQuery) {
