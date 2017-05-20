@@ -17,7 +17,7 @@ const database = require('knex')(configuration);
 
 chai.use(chaiHttp);
 
-const token = 'e'+process.env.TOKEN || config.TOKEN;
+const token = process.env.TOKEN || config.TOKEN;
 
 describe('test data_cleaner functions', () => {
 
