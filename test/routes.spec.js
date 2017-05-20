@@ -128,7 +128,7 @@ describe('test server side routes', () => {
   describe('POST Routes', () => {
 
     it('HAPPY POST /api/v1/mountains', (done) => {
-      console.log(token);
+      // console.log(token);
         chai.request(server)
           .post('/api/v1/mountains')
           .send({
@@ -179,6 +179,7 @@ describe('test server side routes', () => {
     });
 
     it('HAPPY POST /api/v1/ranges', (done) => {
+      console.log(token);
         chai.request(server)
           .post('/api/v1/ranges')
           .send({
