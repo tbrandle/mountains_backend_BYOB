@@ -17,7 +17,8 @@ const database = require('knex')(configuration);
 
 chai.use(chaiHttp);
 
-const token = process.env.TOKEN || config.TOKEN
+const token = process.env.TOKEN || config.TOKEN;
+
 describe('test data_cleaner functions', () => {
 
   it('should alphabatize the mountains array by reduce by mountain range', () => {
@@ -127,6 +128,7 @@ describe('test server side routes', () => {
   describe('POST Routes', () => {
 
     it('HAPPY POST /api/v1/mountains', (done) => {
+      console.log(token);
         chai.request(server)
           .post('/api/v1/mountains')
           .send({
