@@ -178,7 +178,7 @@ describe('test server side routes', () => {
           });
     });
 
-    it('HAPPY POST /api/v1/ranges', (done) => {
+    it('HAPPY POST /api/v1/ranges', () => {
       console.log(token);
         chai.request(server)
           .post('/api/v1/ranges')
@@ -201,7 +201,7 @@ describe('test server side routes', () => {
               response.body.length.should.equal(2);
               response.body[1].should.have.property('range');
               response.body[1].range.should.equal('Gumdrops');
-              done();
+              // done();
             });
           });
     });
