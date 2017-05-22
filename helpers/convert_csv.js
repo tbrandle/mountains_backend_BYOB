@@ -1,14 +1,14 @@
-const csv = require('csvtojson')
-const fs = require('fs')
+const csv = require('csvtojson');
+const fs = require('fs');
 const mountains = './csv/mountains.csv';
 
-let mountainJson = []
+let mountainJson = [];
 
 const writeToFile = (jsonObj) => {
   fs.writeFileSync('../json/mountains.json', jsonObj, (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
-  })
+  });
 };
 
 csv().fromFile(mountains)

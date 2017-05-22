@@ -1,12 +1,12 @@
-const mountains = require('../../../json/mountains.json')
-const cleanArray = require('../../../helpers/data_cleaner.js')
+const mountains = require('../../../json/mountains.json');
+const cleanArray = require('../../../helpers/data_cleaner.js');
 
-const cleanMountainObject = cleanArray(mountains)
+const cleanMountainObject = cleanArray(mountains);
 
-const insertMountain = (knex, mountain, range_id) =>{
-  const updatedMountain = Object.assign({}, mountain, { range_id: range_id })
-  return knex('mountains').insert(updatedMountain)
-}
+const insertMountain = (knex, mountain, rangeId) => {
+  const updatedMountain = Object.assign({}, mountain, { range_id: rangeId });
+  return knex('mountains').insert(updatedMountain);
+};
 
 const createMountainPromise = (knex, mountains) => {
   let rangeObject = { range: mountains[0].range };
